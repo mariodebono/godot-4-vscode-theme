@@ -1,0 +1,86 @@
+{
+    "injectionSelector": "L:source.gdscript -comment.line -string.quoted.gdscript",
+    "scopeName": "source.gdscript.source-injection",
+    "patterns": [
+        {
+            "include": "#global_fix"
+        },
+        {
+            "include": "#global_keywords"
+        },
+        {
+            "include": "#decorator_function"
+        },
+        {
+            "include": "#node_path"
+        },
+        {
+            "include": "#function_calls"
+        },
+        {
+            "include": "#region"
+        },
+        {
+            "include": "#comment_double"
+        },
+        {
+            "include": "#comment"
+        }
+    ],
+    "repository": {
+        "global_fix": {
+            "match": "\\b(?:print|printt|print_rich|printerr|push_warning|push_error|range)\\b",
+            "name": "meta.function-global.gdscript"
+        },
+        "global_keywords": {
+            "match": "\\b(?:preload)\\b",
+            "name": "meta.method-global.gdscript"
+        },
+        "decorator_function": {
+            "match": "@([a-zA-Z_][a-zA-Z0-9_]*)",
+            "name": "entity.name.function.decorator.gdscript"
+        },
+        "node_path": {
+            "match": "[%$]([a-zA-Z_][a-zA-Z0-9_/]*)",
+            "name": "meta.literal.nodepath.bare.gdscript"
+        },
+        "function_calls": {
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
+            "captures": {
+                "1": {
+                    "name": "entity.name.function-call.gdscript"
+                }
+            }
+        },
+        "region": {
+            "match": "^(#)(region|endregion)(.*)$",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.region.gdscript"
+                },
+                "2": {
+                    "name": "keyword.control.directive.region.gdscript"
+                },
+                "3": {
+                    "name": "region.line.gdscript"
+                }
+            },
+            "name": "meta.preprocessor.region.gdscript"
+        },
+        "comment_double": {
+            "name": "comment.line.double-number-sign.gdscript",
+            "begin": "##",
+            "end": "$"
+        },
+        "comment": {
+            "begin": "#(?!#)",
+            "end": "$",
+            "name": "comment.line.number-sign.gdscript",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.definition.comment.number-sign.gdscript"
+                }
+            }
+        }
+    }
+}

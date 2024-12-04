@@ -1,0 +1,43 @@
+{
+    "injectionSelector": "L:source.gdscript -comment.line -string.quoted.gdscript",
+    "scopeName": "source.gdscript.extra-keywords",
+    "patterns": [
+        {
+            "include": "#constant_fix"
+        },
+        {
+            "include": "#void_fix"
+        },
+        {
+            "include": "#self_fix"
+        },
+        {
+            "include": "#class_name"
+        }
+    ],
+    "repository": {
+        "constant_fix": {
+            "match": "\\b(?:true|false|null|PI)\\b",
+            "name": "constant.language.words.gdscript"
+        },
+        "void_fix": {
+            "match": "\\b(?:void)\\b",
+            "name": "keyword.language.void.gdscript"
+        },
+        "self_fix": {
+            "match": "\\b(?:self)\\b",
+            "name": "variable.language.self.gdscript"
+        },
+        "class_name": {
+            "match": "(?<=class_name)\\s+([a-zA-Z_]\\w*(\\.([a-zA-Z_]\\w*))?)",
+            "captures": {
+                "1": {
+                    "name": "def.entity.name.type.class.gdscript"
+                },
+                "2": {
+                    "name": "class.other.gdscript"
+                }
+            }
+        }
+    }
+}
