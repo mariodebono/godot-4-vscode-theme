@@ -1,0 +1,378 @@
+{
+    "name": "Godot 4 Breeze Dark",
+    "colors": {
+        "editor.background": "#222427",
+        "editorGroupHeader.tabsBackground": "#3d4247",
+        "activityBar.background": "#2b2e32",
+        "activityBar.activeBackground": "#3d4247",
+        "sideBar.background": "#26292d",
+        "sideBarSectionHeader.background": "#3d4247",
+        "sideBar.border": "#3d4247",
+        "input.background": "#2b2e32",
+        "input.foreground": "#c5c6c9",
+        "menu.background": "#3d4247",
+        "menubar.selectionBackground": "#3d4247",
+        "breadcrumb.background": "#26292d",
+        "tab.activeBackground": "#3d4247",
+        "tab.inactiveBackground": "#2b2e32",
+        "tab.inactiveForeground": "#b7b8bb",
+        "tab.activeForeground": "#c5c6c9",
+        "titleBar.activeBackground": "#202020",
+        "commandCenter.background": "#2b2e32",
+        "commandCenter.activeBackground": "#3d4247",
+        "quickInputTitle.background": "#3d4247",
+        "quickInput.background": "#2b2e32",
+        "quickInput.foreground": "#c5c6c9",
+        "quickInputList.focusBackground": "#3d4247",
+        "quickInputList.focusForeground": "#c5c6c9",
+        "quickInputList.focusIconForeground": "#c5c6c9",
+    },
+    "tokenColors": [
+        // Sdhaders
+        {
+            "scope": [
+                "entity.name.type.gdshader",
+                "keyword.language.classifier.gdshader",
+                "storage.modifier.gdshader",
+                "support.type.gdshader",
+                "support.type.annotation.gdshader",
+                "entity.name.function.gdshader",
+            ],
+            "settings": {
+                "foreground": "#f58c8c"
+            }
+        },
+        {
+            "scope": [
+                "keyword.control.gdshader",
+            ],
+            "settings": {
+                "foreground": "#e684bd",
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric.float.gdshader",
+            ],
+            "settings": {
+                "foreground": "#7ADDBE",
+            }
+        },
+        {
+            "scope": [
+                "variable.language.gdshader"
+            ],
+            "settings": {
+                "foreground": "#afecd9",
+            }
+        },
+        {
+            "scope": [
+                "support.function.gdshader",
+            ],
+            "settings": {
+                "foreground": "#79c5f7",
+            }
+        },
+        {
+            "scope": [
+                "variable.name.gdshader",
+            ],
+            "settings": {
+                "foreground": "#b9b9b9",
+            }
+        },
+        {
+            "scope": [
+                "keyword.operator.gdshader",
+            ],
+            "settings": {
+                "foreground": "#b4c2f0",
+            }
+        },
+        {
+            "scope": [
+                "variable.other.property.gdshader",
+                "entity.name.variable.field.gdshader",
+            ],
+            "settings": {
+                "foreground": "#b4c2f0",
+            }
+        },
+        // dgscript
+        {
+            "scope": [
+                "comment.line.double-slash"
+            ],
+            "settings": {
+                "foreground": "#5a6359"
+            }
+        },
+        {
+            "scope": [
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#c9bca6"
+            }
+        },
+        {
+            "scope": [
+                "meta.structure.dictionary.value.json"
+            ],
+            "settings": {
+                "foreground": "#acc9a6"
+            }
+        },
+        {
+            "scope": [
+                "meta.structure.dictionary.json.comments"
+            ],
+            "settings": {
+                "foreground": "#acc9a6"
+            }
+        },
+        {
+            "name": "Comment double number sign",
+            "scope": [
+                "comment.line.double-number-sign.gdscript"
+            ],
+            "settings": {
+                "foreground": "#89a598"
+            }
+        },
+        {
+            "name": "Comment keywords WARNING, TOOD/FIXME",
+            "scope": [
+                "comment.keywords.warnings"
+            ],
+            "settings": {
+                "foreground": "#b89c7a"
+            }
+        },
+        {
+            "name": "Comment keywords CRITICAL",
+            "scope": [
+                "comment.keywords.critical"
+            ],
+            "settings": {
+                "foreground": "#c45959"
+            }
+        },
+        {
+            "name": "Comment keywords NOTICE",
+            "scope": [
+                "comment.keywords.notices"
+            ],
+            "settings": {
+                "foreground": "#8fab82"
+            }
+        },
+        {
+            "name": "Region Line",
+            "scope": [
+                "meta.preprocessor.region.gdscript",
+                "punctuation.definition.region.gdscript",
+                "keyword.control.directive.region.gdscript",
+                "region.line.gdscript"
+            ],
+            "settings": {
+                "foreground": "#ad75c4",
+            }
+        },
+        {
+            "scope": [
+                "comment.line.number-sign.gdscript"
+            ],
+            "settings": {
+                "foreground": "#6f6f6f"
+            }
+        },
+        {
+            "scope": [
+                "string.quoted.gdscript",
+            ],
+            "settings": {
+                "foreground": "#ebde98",
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric.integer.hexadecimal.gdscript",
+            ],
+            "settings": {
+                "foreground": "#7ADDBE",
+            }
+        },
+        {
+            "scope": [
+                "keyword.operator.bitwise.gdscript",
+                "keyword.operator.arithmetic.gdscript",
+                "punctuation.parenthesis.begin.gdscript",
+                "punctuation.parenthesis.end.gdscript",
+            ],
+            "settings": {
+                "foreground": "#AF9DDB",
+            }
+        },
+        {
+            "scope": [
+                "meta.method-global.gdscript"
+            ],
+            "settings": {
+                "foreground": "#e9d18e",
+            }
+        },
+        {
+            "scope": [
+                "def.entity.name.type.class.gdscript"
+            ],
+            "settings": {
+                "foreground": "#4bdfb0",
+            }
+        },
+        {
+            "scope": "meta.literal.nodepath.bare.gdscript",
+            "settings": {
+                "foreground": "#69c066"
+            }
+        },
+        {
+            "scope": [
+                "meta.function-global.gdscript",
+                "keyword.control.flow.gdscript"
+            ],
+            "settings": {
+                "foreground": "#af9ddb"
+            }
+        },
+        {
+            "scope": [
+                "keyword.control.flow.gdscript"
+            ],
+            "settings": {
+                "foreground": "#e684bd"
+            }
+        },
+        {
+            "scope": "entity.name.type.class.builtin.gdscript",
+            "settings": {
+                "foreground": "#8fffdb",
+            }
+        },
+        {
+            "scope": "storage.type.function.gdscript",
+            "settings": {
+                "foreground": "#ff8f8f",
+            }
+        },
+        {
+            "scope": [
+                "entity.name.function-call.gdscript",
+            ],
+            "settings": {
+                "foreground": "#49adf0",
+            }
+        },
+        {
+            "scope": "entity.name.function.gdscript",
+            "settings": {
+                "foreground": "#79c5f7",
+            }
+        },
+        {
+            "scope": [
+                "meta.function.parameters.gdscript",
+                "variable.other.gdscript"
+            ],
+            "settings": {
+                "foreground": "#cdcfd2",
+            }
+        },
+        {
+            "scope": "meta.function.gdscript",
+            "settings": {
+                "foreground": "#41f9be",
+            }
+        },
+        {
+            "scope": "entity.name.type.class.gdscript",
+            "settings": {
+                "foreground": "#aae2cf",
+            }
+        },
+        {
+            "scope": "variable.other.property.gdscript",
+            "settings": {
+                "foreground": "#94ddff",
+            }
+        },
+        {
+            "scope": "storage.type.var.gdscript",
+            "settings": {
+                "foreground": "#ff8f8f",
+            }
+        },
+        {
+            "scope": "entity.name.function.decorator.gdscript",
+            "settings": {
+                "foreground": "#ffc17a",
+            }
+        },
+        {
+            "scope": [
+                "variable.language.gdscript",
+            ],
+            "settings": {
+                "foreground": "#ff8f8f",
+            }
+        },
+        {
+            "scope": [
+                "keyword.operator.comparison.gdscript",
+                "keyword.operator.boolean.gdscript",
+                "storage.type.is.gdscript"
+            ],
+            "settings": {
+                "foreground": "#fff2ab",
+            }
+        },
+        {
+            "scope": [
+                "meta.function.gdscript",
+                "constant.numeric.integer.gdscript",
+                "constant.numeric.float.gdscript",
+                "meta.void.gdscript",
+            ],
+            "settings": {
+                "foreground": "#7addbe",
+            }
+        },
+        {
+            "scope": [
+                "keyword.language.gdscript",
+                "keyword.control.gdscript",
+                "keyword.operator.wordlike.gdscript"
+            ],
+            "settings": {
+                "foreground": "#ff8f8f",
+            }
+        },
+        {
+            "scope": [
+                "constant.language.words.gdscript"
+            ],
+            "settings": {
+                "foreground": "#ff8f8f",
+            }
+        },
+        {
+            "name": "Variable Self",
+            "scope": "variable.language.self.gdscript",
+            "settings": {
+                "foreground": "#f66d82",
+                "fontStyle": "italic"
+            }
+        },
+    ]
+}
