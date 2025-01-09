@@ -33,7 +33,7 @@
             "name": "meta.function-global.gdscript"
         },
         "global_keywords": {
-            "match": "\\b(?:deg_to_rad|rad_to_deg|wrapf|wrapi|sin|cos|tan|asin|acos|atan|atan2|exp|log|log10|pow|ceil|floor|round|clamp|lerp|randf|randi|rand_range|rand_seed|seed|abs|sign|sqrt|inverse_sqrt|fmod|min|max|move_toward|stepify|smoothstep|distance_to|dot|cross|normalize|angle_to)\\b",
+            "match": "\\b(?:deg_to_rad|rad_to_deg|wrapf|wrapi|sin|cos|tan|asin|acos|atan|atan2|exp|log|log10|pow|ceil|floor|round|clamp|lerp|randf|randi|rand_range|rand_seed|seed|abs|sign|sqrt|inverse_sqrt|fmod|min|minf|mini|max|maxf|maxi|move_toward|stepify|smoothstep|distance_to|dot|cross|normalize|angle_to)\\b",
             "name": "meta.function-global.gdscript"
         },
         "decorator_function": {
