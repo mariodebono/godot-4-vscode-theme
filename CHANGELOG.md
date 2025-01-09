@@ -1,6 +1,12 @@
 # Changelog
 
-## [0.0.1] - 2023-10-10
+
+## [0.1.1] - 2025-01-09
+### Fixed
+- Add missing highlight for `maxi`, `maxf`, `mini`, and `minf`
+- fixed CHANGELOG.md entry
+
+## [0.1.0] - 2024-12-10
 ### Added
 - Initial release of the Godot 4 VS Code Theme.
 - Added color theme to closely match the Godot 4 Editor.
