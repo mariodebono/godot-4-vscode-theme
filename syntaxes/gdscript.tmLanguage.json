@@ -1,86 +1,86 @@
 {
-    "injectionSelector": "L:source.gdscript -comment.line -string.quoted.gdscript",
-    "scopeName": "source.gdscript.source-injection",
-    "patterns": [
-        {
-            "include": "#global_fix"
-        },
-        {
-            "include": "#global_keywords"
-        },
-        {
-            "include": "#decorator_function"
-        },
-        {
-            "include": "#node_path"
-        },
-        {
-            "include": "#function_calls"
-        },
-        {
-            "include": "#region"
-        },
-        {
-            "include": "#comment_double"
-        },
-        {
-            "include": "#comment"
-        }
-    ],
-    "repository": {
-        "global_fix": {
-            "match": "\\b(?:print|printerr|printraw|prints|printt|push_error|push_warning|range|assert|char|convert|dict_to_inst|get_stack|inst_to_dict|is_instance_of|len|load|preload|print_debug|print_stack|type_exists)\\b",
-            "name": "meta.function-global.gdscript"
-        },
-        "global_keywords": {
-            "match": "\\b(?:deg_to_rad|rad_to_deg|wrapf|wrapi|sin|cos|tan|asin|acos|atan|atan2|exp|log|log10|pow|ceil|floor|round|clamp|lerp|randf|randi|rand_range|rand_seed|seed|abs|sign|sqrt|inverse_sqrt|fmod|min|minf|mini|max|maxf|maxi|move_toward|stepify|smoothstep|distance_to|dot|cross|normalize|angle_to)\\b",
-            "name": "meta.function-global.gdscript"
-        },
-        "decorator_function": {
-            "match": "@([a-zA-Z_][a-zA-Z0-9_]*)",
-            "name": "entity.name.function.decorator.gdscript"
-        },
-        "node_path": {
-            "match": "[%$]([a-zA-Z_][a-zA-Z0-9_/]*)",
-            "name": "meta.literal.nodepath.bare.gdscript"
-        },
-        "function_calls": {
-            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
-            "captures": {
-                "1": {
-                    "name": "entity.name.function-call.gdscript"
-                }
-            }
-        },
-        "region": {
-            "match": "^(#)(region|endregion)(.*)$",
-            "captures": {
-                "1": {
-                    "name": "punctuation.definition.region.gdscript"
-                },
-                "2": {
-                    "name": "keyword.control.directive.region.gdscript"
-                },
-                "3": {
-                    "name": "region.line.gdscript"
-                }
-            },
-            "name": "meta.preprocessor.region.gdscript"
-        },
-        "comment_double": {
-            "name": "comment.line.double-number-sign.gdscript",
-            "begin": "##",
-            "end": "$"
-        },
-        "comment": {
-            "begin": "#(?!#)",
-            "end": "$",
-            "name": "comment.line.number-sign.gdscript",
-            "beginCaptures": {
-                "1": {
-                    "name": "punctuation.definition.comment.number-sign.gdscript"
-                }
-            }
-        }
+  "injectionSelector": "L:source.gdscript -comment.line -string.quoted.gdscript",
+  "scopeName": "source.gdscript.source-injection",
+  "patterns": [
+    {
+      "include": "#global_fix"
+    },
+    {
+      "include": "#global_keywords"
+    },
+    {
+      "include": "#decorator_function"
+    },
+    {
+      "include": "#node_path"
+    },
+    {
+      "include": "#function_calls"
+    },
+    {
+      "include": "#region"
+    },
+    {
+      "include": "#comment_double"
+    },
+    {
+      "include": "#comment"
     }
+  ],
+  "repository": {
+    "global_fix": {
+      "match": "\\b(?:print|printerr|printraw|prints|printt|push_error|push_warning|range|assert|char|convert|dict_to_inst|get_stack|inst_to_dict|is_instance_of|len|load|preload|print_debug|print_stack|type_exists)\\b",
+      "name": "meta.function-global.gdscript"
+    },
+    "global_keywords": {
+      "match": "\\b(?:deg_to_rad|rad_to_deg|wrapf|wrapi|sin|cos|tan|asin|acos|atan|atan2|exp|log|log10|pow|ceil|floor|round|clamp|lerp|lerpf|lerp_angle|inverse_lerp|randf|randi|rand_range|rand_seed|seed|abs|sign|sqrt|inverse_sqrt|fmod|min|minf|mini|max|maxf|maxi|move_toward|stepify|smoothstep|distance_to|dot|cross|normalize|angle_to)\\b",
+      "name": "meta.function-global.gdscript"
+    },
+    "decorator_function": {
+      "match": "@([a-zA-Z_][a-zA-Z0-9_]*)",
+      "name": "entity.name.function.decorator.gdscript"
+    },
+    "node_path": {
+      "match": "[%$]([a-zA-Z_][a-zA-Z0-9_/]*)",
+      "name": "meta.literal.nodepath.bare.gdscript"
+    },
+    "function_calls": {
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function-call.gdscript"
+        }
+      }
+    },
+    "region": {
+      "match": "^(#)(region|endregion)(.*)$",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.region.gdscript"
+        },
+        "2": {
+          "name": "keyword.control.directive.region.gdscript"
+        },
+        "3": {
+          "name": "region.line.gdscript"
+        }
+      },
+      "name": "meta.preprocessor.region.gdscript"
+    },
+    "comment_double": {
+      "name": "comment.line.double-number-sign.gdscript",
+      "begin": "##",
+      "end": "$"
+    },
+    "comment": {
+      "begin": "#(?!#)",
+      "end": "$",
+      "name": "comment.line.number-sign.gdscript",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.comment.number-sign.gdscript"
+        }
+      }
+    }
+  }
 }
