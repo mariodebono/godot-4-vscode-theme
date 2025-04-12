@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.1.2] - 2025-04-12
+### Fixed
+- Add nissing global highlight for `lerpf`, `lerp_angle`, and `inverse_lerp`
 
 ## [0.1.1] - 2025-01-09
 ### Fixed

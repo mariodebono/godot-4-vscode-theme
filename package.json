@@ -1,52 +1,55 @@
 {
-    "name": "godot-4-vscode-theme",
-    "displayName": "Godot Theme for VS Code",
-    "description": "Godot 4 inspired theme for Visual Studio Code",
-    "icon": "icon.png",
-    "publisher": "mariodebono",
-    "repository": "https://github.com/mariodebono/godot-4-vscode-theme",
-    "version": "0.1.1",
-    "engines": {
-        "vscode": "^1.83.0"
-    },
-    "categories": [
-        "Themes"
+  "name": "godot-4-vscode-theme",
+  "displayName": "Godot Theme for VS Code",
+  "description": "Godot 4 inspired theme for Visual Studio Code",
+  "icon": "icon.png",
+  "publisher": "mariodebono",
+  "repository": "https://github.com/mariodebono/godot-4-vscode-theme",
+  "version": "0.1.2",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Godot 4",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Godot-4-color-theme.json"
+      },
+      {
+        "label": "Godot 4 - Breeze Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Godot-4-breeze-dark-color-theme.json"
+      }
     ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Godot 4",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Godot-4-color-theme.json"
-            },
-            {
-                "label": "Godot 4 - Breeze Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Godot-4-breeze-dark-color-theme.json"
-            }
-        ],
-        "grammars": [
-            {
-                "path": "./syntaxes/gdscript.tmLanguage.json",
-                "scopeName": "source.gdscript.source-injection",
-                "injectTo": [
-                    "source.gdscript"
-                ]
-            },
-            {
-                "path": "./syntaxes/extra-keywords.tmLanguage.json",
-                "scopeName": "source.gdscript.extra-keywords",
-                "injectTo": [
-                    "source.gdscript"
-                ]
-            },
-            {
-                "path": "./syntaxes/comment-keywords.tmLanguage.json",
-                "scopeName": "source.gdscript.comment-keywords",
-                "injectTo": [
-                    "source.gdscript"
-                ]
-            }
+    "grammars": [
+      {
+        "path": "./syntaxes/gdscript.tmLanguage.json",
+        "scopeName": "source.gdscript.source-injection",
+        "injectTo": [
+          "source.gdscript"
         ]
-    }
+      },
+      {
+        "path": "./syntaxes/extra-keywords.tmLanguage.json",
+        "scopeName": "source.gdscript.extra-keywords",
+        "injectTo": [
+          "source.gdscript"
+        ]
+      },
+      {
+        "path": "./syntaxes/comment-keywords.tmLanguage.json",
+        "scopeName": "source.gdscript.comment-keywords",
+        "injectTo": [
+          "source.gdscript"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.3.2"
+  }
 }
