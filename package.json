@@ -6,6 +6,9 @@
   "publisher": "mariodebono",
   "repository": "https://github.com/mariodebono/godot-4-vscode-theme",
   "version": "1.0.1",
+  "scripts": {
+    "changelog": "auto-changelog --ignore-commit-pattern \"[R|r]elease|[c|C]hore|changelog|update changelog|updated changelog|update CHANGELOG\""
+  },
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -50,6 +53,10 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.3.2"
+    "@vscode/vsce": "^3.3.2",
+    "auto-changelog": "^2.5.0"
+  },
+  "auto-changelog": {
+    "startingVersion": "1.0.1"
   }
 }
