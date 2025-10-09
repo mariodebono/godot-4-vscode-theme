@@ -228,7 +228,7 @@
                 "def.entity.name.type.class.gdscript"
             ],
             "settings": {
-                "foreground": "#4bdfb0",
+                "foreground": "#AAE2CF",
             }
         },
         {
@@ -257,7 +257,7 @@
         {
             "scope": "entity.name.type.class.builtin.gdscript",
             "settings": {
-                "foreground": "#8fffdb",
+                "foreground": "#4bdfb0",
             }
         },
         {
@@ -298,7 +298,7 @@
         {
             "scope": "entity.name.type.class.gdscript",
             "settings": {
-                "foreground": "#aae2cf",
+                "foreground": "#8FFFDB",
             }
         },
         {
