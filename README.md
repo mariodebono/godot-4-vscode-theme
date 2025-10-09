@@ -1,49 +1,70 @@
-# Godot 4 VS Code Theme
+# Godot 4 VS Code Theme for GDScript
 
-This Visual Studio Code theme is inspired by the Godot 4 editor, aiming to provide a similar look and feel to facilitate a seamless transition between the two environments.
+[![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/mariodebono.godot-4-vscode-theme)](https://marketplace.visualstudio.com/items?itemName=mariodebono.godot-4-vscode-theme)
+[![Visual Studio Marketplace installs](https://img.shields.io/visual-studio-marketplace/i/mariodebono.godot-4-vscode-theme)](https://marketplace.visualstudio.com/items?itemName=mariodebono.godot-4-vscode-theme)
 
-> **Note:** This theme offers syntax highlighting exclusively for `.gd` scripts.
+The Godot 4 VS Code Theme is now officially released as version 1.0.1. It mirrors the editor palette from Godot 4 and ships grammar tweaks that make GDScript easier to read inside Visual Studio Code. The latest update fixes class colors so built-in and custom types stand out at a glance.
+
+## Install and activate
+
+1. Open the Extensions view in VS Code and search for **Godot Theme for VS Code**.
+2. Install the extension published by `mariodebono`.
+3. Open the Command Palette and run **Preferences: Color Theme**, then pick either **Godot 4** or **Godot 4 - Breeze Dark**.
+4. If you prefer an offline install, download the `.vsix` from the releases page and install it with **Extensions: Install from VSIX**.
 
 ## Requirements
 
-- VS Code `1.83.0` or later
-- Requires [Godot-Tools Extension](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools)
+- Visual Studio Code 1.83.0 or later
+- [Godot Tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) for best grammar support (the theme loads without it, but extra scopes rely on that extension)
 
+## Release highlights for 1.0.1
 
-## Inaccuracies
+- Accurate colors for classes declared with `class_name`, covering both built-in and project types
 
-The syntax highlighter provided by the godot-tools extension does not fully replicate the distinctions made by the internal Godot editor.
+For earlier history, see the [changelog](CHANGELOG.md).
 
-To enhance the identification of various tokens provided by the godot-tools extension, several overrides have been implemented. While the color scheme may not be an exact match to the Godot editor, these adjustments try to improve the visibility and differentiation of syntax elements, particularly in dark theme settings.
+## Why choose this theme
 
-> **Note:** Currently, there is no distinction between internal classes and user-defined classes; both are colored the same. This may cause some confusion when trying to differentiate between built-in and custom classes in your scripts.
+- Editor colors match the official Godot 4 look, so switching between the engine and VS Code feels natural
+- Two bundled variants: the default Godot 4 palette and the Breeze Dark theme used in the editor
+- Clear contrast for signals, classes, control flow, and comments, tuned for long sessions in dark mode
+- Support syntax highlighting #regions
+- Terminal, activity bar, and status bar colors align with the code editor for a consistent workspace
 
-## Color Themes
+## Syntax coverage
 
-- Godot 4 Theme (Default Godot Engine Theme)
-- Godot 4 Breeze Dark (Matching the Godot Engine Editor Theme `Breeze Dark`)
+The theme builds on the scopes provided by Godot Tools and extends them with custom injections:
 
-## Features
+- Global helpers like `print`, `randf`, `lerp_angle`, and more
+- Constants such as `true`, `false`, `null`, `PI`, and the `void` keyword
+- The `self` keyword and other language identifiers that Godot developers use every day
+- Region markers `#region` and `#endregion`
+- Comment keywords including TODO, FIXME, NOTE, WARNING, CRITICAL, NOTICE
+- Shader script scopes for types, uniforms, functions, and operators
 
-### Syntax Highlighting
+## FAQ
 
-To align the script highlighting with the Godot editor, the following additional syntax highlighting features have been implemented:
+**Does the theme work without Godot Tools?** Yes. You can enable it without Godot Tools, but the extra grammar injections (class names, comment tags, globals) require the scopes that extension adds.
 
-- **Globals**: Includes global functions such as `print`, and global math functions such as `rand` and `deg_to_rad`.
-- **Constants**: Encompasses constants like `true`, `false`, `null`, and `PI`, as well as the `void` keyword and the `self` variable.
-- **Comments**: Highlights comment keywords such as `TODO`, `FIXME`, `NOTE`, and others.
-- **Regions**: Highlights `#region` and `#endregion` directives.
+**How do I switch between the two theme variants?** Open the Command Palette, run **Preferences: Color Theme**, and select either **Godot 4** or **Godot 4 - Breeze Dark**.
+
+**Where do I report missing highlights?** Open an issue on the [GitHub repository](https://github.com/mariodebono/godot-4-vscode-theme/issues) and include a short code sample.
 
 ## Contributing
 
-If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/mariodebono/godot-4-vscode-theme).
+Contributions are welcome:
 
-**If you find unstyled classes, please raise an issue so they can be addressed.**
+1. Fork the repository and create a branch for your change.
+2. Update the theme JSON or grammar files as needed.
+3. Run your tests or manual checks.
+4. Open a pull request with screenshots that show the change in action.
+
+If you discover an unstyled token, please raise an issue so it can be fixed.
 
 ## Acknowledgements
 
-Special thanks to [ryanabx's Godot VS Code Theme](https://github.com/ryanabx/godot-vscode-theme) for the inspiration. This theme was developed as a continuation of that work.
+The project builds on the work of [ryanabx's Godot VS Code Theme](https://github.com/ryanabx/godot-vscode-theme) and feedback from the Godot community.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is released under the MIT License. See the [LICENSE](LICENSE) file for details.
