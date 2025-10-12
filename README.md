@@ -3,7 +3,7 @@
 [![Visual Studio Marketplace version](https://img.shields.io/visual-studio-marketplace/v/mariodebono.godot-4-vscode-theme)](https://marketplace.visualstudio.com/items?itemName=mariodebono.godot-4-vscode-theme)
 [![Visual Studio Marketplace installs](https://img.shields.io/visual-studio-marketplace/i/mariodebono.godot-4-vscode-theme)](https://marketplace.visualstudio.com/items?itemName=mariodebono.godot-4-vscode-theme)
 
-The Godot 4 VS Code Theme is now officially released as version 1.0.1. It mirrors the editor palette from Godot 4 and ships grammar tweaks that make GDScript easier to read inside Visual Studio Code. The latest update fixes class colors so built-in and custom types stand out at a glance.
+The Godot 4 VS Code Theme is now officially released as version 1.0.2. It mirrors the editor palette from Godot 4 and ships grammar tweaks that make GDScript easier to read inside Visual Studio Code. The latest update restores highlighting for the `wrap` helper so globals stay consistent across the API.
 
 ## Install and activate
 
@@ -17,8 +17,9 @@ The Godot 4 VS Code Theme is now officially released as version 1.0.1. It mirror
 - Visual Studio Code 1.83.0 or later
 - [Godot Tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools) for best grammar support (the theme loads without it, but extra scopes rely on that extension)
 
-## Release highlights for 1.0.1
+## Release highlights for 1.0.2
 
+- Restores the missing `wrap` global highlight so helper functions stay readable in scripts
 - Accurate colors for classes declared with `class_name`, covering both built-in and project types
 
 For earlier history, see the [changelog](CHANGELOG.md).
