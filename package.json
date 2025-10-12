@@ -5,7 +5,7 @@
   "icon": "icon.png",
   "publisher": "mariodebono",
   "repository": "https://github.com/mariodebono/godot-4-vscode-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "changelog": "auto-changelog --ignore-commit-pattern \"[R|r]elease|[c|C]hore|changelog|update changelog|updated changelog|update CHANGELOG\""
   },
