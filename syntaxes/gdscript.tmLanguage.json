@@ -29,7 +29,7 @@
   ],
   "repository": {
     "global_fix": {
-      "match": "\\b(?:print|printerr|printraw|prints|printt|push_error|push_warning|range|assert|char|convert|dict_to_inst|get_stack|inst_to_dict|is_instance_of|len|load|preload|print_debug|print_stack|type_exists)\\b",
+      "match": "\\b(?:print|printerr|printraw|prints|printt|push_error|push_warning|wrap|range|assert|char|convert|dict_to_inst|get_stack|inst_to_dict|is_instance_of|len|load|preload|print_debug|print_stack|type_exists)\\b",
       "name": "meta.function-global.gdscript"
     },
     "global_keywords": {
